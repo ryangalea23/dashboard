@@ -22,7 +22,7 @@ import './App.css';
             console.log("Received URL: ", event.data.url);
             const extractedFacilityNumber = getFacilityNumber(event.data.url);
             console.log("Facility Number: ", extractedFacilityNumber);
-            setFacilityNumber("998"); // Update state with the extracted facility number extractedFacilityNumber
+            setFacilityNumber(extractedFacilityNumber); // Update state with the extracted facility number extractedFacilityNumber
           }
         };
 
